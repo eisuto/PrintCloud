@@ -1,0 +1,36 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "contact": {}
+    },
+    "paths": {
+        "/api/printers": {
+            "get": {
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "打印机"
+                ],
+                "summary": "获取全部打印机",
+                "responses": {
+                    "200": {
+                        "description": "{\"code\":1,\"data\":[{\"id\":1,\"status\":\"ok\"}],\"msg\": \"操作成功\"}",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    "400": {
+                        "description": "{\"code\":1,\"data\":[],\"msg\": \"操作失败\"}",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
